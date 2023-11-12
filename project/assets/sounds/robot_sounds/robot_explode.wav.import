@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/robot_explode.wav-e990df8b6ba68871afb7a4619d3f9d7c.sample"
+
+[deps]
+
+source_file="res://assets/sounds/robot_sounds/robot_explode.wav"
+dest_files=[ "res://.import/robot_explode.wav-e990df8b6ba68871afb7a4619d3f9d7c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

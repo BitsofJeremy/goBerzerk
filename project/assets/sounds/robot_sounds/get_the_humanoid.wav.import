@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/get_the_humanoid.wav-b53a236f56dc48e2422c0da5c842c3b0.sample"
+
+[deps]
+
+source_file="res://assets/sounds/robot_sounds/get_the_humanoid.wav"
+dest_files=[ "res://.import/get_the_humanoid.wav-b53a236f56dc48e2422c0da5c842c3b0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

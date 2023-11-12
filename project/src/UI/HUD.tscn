@@ -1,0 +1,130 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://src/UI/HUD.gd" type="Script" id=1]
+[ext_resource path="res://assets/images/player/player_icon.png" type="Texture" id=2]
+[ext_resource path="res://assets/fonts/ComputerRobot-vJlL.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+extra_spacing_top = 20
+font_data = ExtResource( 3 )
+
+[node name="HUD" type="MarginContainer"]
+anchor_right = 1.0
+margin_right = 1080.0
+margin_bottom = 168.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_constants/margin_right = 50
+custom_constants/margin_top = 20
+custom_constants/margin_left = 50
+custom_constants/margin_bottom = 20
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="main" type="HBoxContainer" parent="."]
+margin_left = 50.0
+margin_top = 20.0
+margin_right = 1670.0
+margin_bottom = 148.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LifeCounter" type="HBoxContainer" parent="main"]
+margin_right = 16.0
+margin_bottom = 128.0
+custom_constants/separation = 20
+
+[node name="L1" type="TextureRect" parent="main/LifeCounter"]
+margin_right = 16.0
+margin_bottom = 128.0
+texture = ExtResource( 2 )
+stretch_mode = 6
+
+[node name="L2" type="TextureRect" parent="main/LifeCounter"]
+visible = false
+margin_left = 36.0
+margin_right = 52.0
+margin_bottom = 128.0
+texture = ExtResource( 2 )
+stretch_mode = 6
+
+[node name="L3" type="TextureRect" parent="main/LifeCounter"]
+visible = false
+margin_left = 72.0
+margin_right = 88.0
+margin_bottom = 128.0
+texture = ExtResource( 2 )
+stretch_mode = 6
+
+[node name="ScoreBox" type="HBoxContainer" parent="main"]
+margin_left = 20.0
+margin_right = 1620.0
+margin_bottom = 128.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Score" type="Label" parent="main/ScoreBox"]
+margin_top = 25.0
+margin_right = 798.0
+margin_bottom = 102.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/shadow_offset_y = 5
+custom_constants/shadow_as_outline = 5
+align = 1
+valign = 1
+
+[node name="ScoreLabel" type="Label" parent="main/ScoreBox"]
+margin_left = 802.0
+margin_top = 25.0
+margin_right = 1600.0
+margin_bottom = 102.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/shadow_offset_y = 5
+custom_constants/shadow_as_outline = 5
+text = "0"
+align = 1
+valign = 1
+
+[node name="TotalScore" type="Label" parent="main/ScoreBox"]
+visible = false
+margin_left = 766.0
+margin_top = 25.0
+margin_right = 1145.0
+margin_bottom = 102.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/shadow_offset_y = 5
+custom_constants/shadow_as_outline = 5
+align = 1
+valign = 1
+
+[node name="TotalScoreLabel" type="Label" parent="main/ScoreBox"]
+visible = false
+margin_left = 1021.0
+margin_top = 25.0
+margin_right = 1528.0
+margin_bottom = 102.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/shadow_offset_y = 5
+custom_constants/shadow_as_outline = 5
+text = "0"
+align = 1
+valign = 1
